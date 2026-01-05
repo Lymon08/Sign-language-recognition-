@@ -1,0 +1,264 @@
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.App h1 {
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.App h2 {
+  color: #555;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.App h3 {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.App h4 {
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.App p {
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.upload-section {
+  padding: 2rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #f5f9ff;
+  border-radius: 6px;
+}
+
+.mode-selector {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.mode-selector label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.mode-selector input[type="radio"] {
+  cursor: pointer;
+}
+
+.control-group {
+  margin-bottom: 1rem;
+}
+
+.control-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.control-group select,
+.control-group input[type="range"] {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.control-group select:disabled,
+.control-group input[type="range"]:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.upload-section input[type="file"] {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 2px dashed #007bff;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.upload-section input[type="file"]:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.preview {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.preview img {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.primary-btn {
+  padding: 0.75rem 2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background-color 0.2s;
+}
+
+.primary-btn:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.primary-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #d32f2f;
+  padding: 1rem;
+  background-color: #ffebee;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  border-left: 4px solid #d32f2f;
+}
+
+.info {
+  padding: 0.75rem;
+  background-color: #e3f2fd;
+  color: #1976d2;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.threshold-info {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.predictions {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background-color: #e8f5e9;
+  border-radius: 6px;
+  border-left: 4px solid #4caf50;
+}
+
+.predictions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.predictions li {
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.predictions li:last-child {
+  margin-bottom: 0;
+}
+
+.predictions .label {
+  flex: 1;
+  font-weight: 500;
+  color: #333;
+}
+
+.predictions .probability {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 120px;
+}
+
+.predictions .bar {
+  height: 6px;
+  background-color: #4caf50;
+  border-radius: 3px;
+}
+
+.comparisons {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background-color: #fff3e0;
+  border-radius: 6px;
+  border-left: 4px solid #ff9800;
+}
+
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.model-card {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.model-card h4 {
+  margin-top: 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #ff9800;
+  color: #ff9800;
+}
+
+.model-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.model-card li {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.model-card .label {
+  flex: 1;
+}
+
+.model-card .probability {
+  font-weight: 600;
+  color: #ff9800;
+}
