@@ -1,0 +1,14 @@
+{
+  "name": "sign-language-recognition",
+  "version": "1.0.0",
+  "description": "Sign Language Recognition with LSTM Model",
+  "workspaces": [
+    "client",
+    "api"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=client",
+    "build": "npm run build --workspace=client",
+    "install-all": "npm install && npm install --workspace=client"
+  }
+}
